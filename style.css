@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    line-height: 1.2;
+    overflow-x: clip;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.s-hero{
+    font-size: 18px;
+    line-height: 159.1%;
+    color: #fff;
+}
+h1{
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: normal;
+    margin-bottom: 25px;
+    color: #fff;
+    font-family: 'Poppins' sans-serif;
+}
+h2,
+h3,
+h4{
+    color: #120136;
+}
+h2{
+    font-size: 40px;
+    line-height: 67.5px;
+    font-family: 'Poppins' sans-serif;
+}
+h3{
+    font-size: 25px;
+    line-height: 60px;
+    font-family: 'Poppins' sans-serif;
+}
+
+p{
+    font-size: .9rem;
+}
+main{
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.h-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-btn{
+    color: #fff;
+    width: 200px;
+    height: 60px;
+    background: #6936DB;
+    padding: 12px 30px;
+    border-radius: 5px;
+}
+
+header{
+    height: 83px;
+    position: fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    z-index: 3;
+    background: #fff;
+}
+header.fixed{
+    height: 70px;
+    box-shadow: #000;
+}
+header.fixed nav{
+    height: 70px;
+    padding: 15px 0;
+}
+
+nav{
+    height: 83px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.nav-bar ul li{
+    position: relative;
+    display: inline-block;
+    margin: 0 25px;
+}
+ 
+ 
+/*Toggle*/
+.toggle{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+.toggle img{
+    width: 100%;
+}
+.toggle-open{
+    display: none;
+}
+.toggle-close{
+    display: none;
+}
+.toggle-close{
+    display: block;
+}
+@media (max-width: 9910x){
+    .nav-bar{
+        display: block !important;
+    }
+}
+@media (max-width:990px){
+    .toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+      }
+      .nav-bar {
+        display: none;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px 0;
+        z-index: 2;
+      }
+      .nav-bar ul li {
+        display: block;
+        margin: 15px 0;
+      }
+      .nav-bar ul li a {
+        color: #6936DB;
+      }
+      .nav-bar ul li.active::after {
+        right: 0;
+      }
+      .logo-img{
+          width:75%;
+          margin-left: 3%;
+      }
+} 
+
+
+
+.hero{
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+    padding-top: 90px;
+    align-items: center;
+    background-color: #6936DB;
+}
+.hero img{
+    position: absolute;
+    right:0;
+    width: 45%;
+    top: 0;
+    height: 100vh;
+    object-fit: cover;
+}
+.hero-content .col{
+    width: 50%;
+}
+.col p{
+    width: 81%;
+    margin-bottom: 50px;
+}
+/*Download Buttons*/
+.download-btn{
+    width: 100%;
+}
+.download-btn li{
+    display: inline;
+    margin: 15px;
+}
+.download{
+    width: 200px;
+    height: 60px;
+    background: #000;
+    float: left;
+    border-radius: 4px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+.download .fab{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+.p1, .p2{
+    position: absolute;
+    left: 70px;
+}
+.p1{
+    top: 15px;
+    font-size: 12px;
+    font-family: 'Poppins' sans-serif;
+}
+.p2{
+    top: 30px;
+    font-size: 16px;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 500;
+}
+.apple{
+    margin-left:20px;
+}
+
+/*sections*/
+
+#about{
+    text-align: center;
+    /* padding: 30px; */
+}
+
+#about .mainContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    object-fit: contain;
+}
+
+#about .content{
+    width: 50%;
+    /* padding: 15px; */
+    margin-left: 5%;
+    text-align: left !important;
+}
+
+#about .content p{
+    line-height: 1.6;
+}
+
+#about .img{
+    height: auto;
+}
+#about .img img{
+    height: auto;
+    width: 70%;
+    position: relative;
+    margin-left: 40%;
+}
+
+#learn{
+    background-color: #6936DB;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+#learn .text{
+    width: 50%;
+    margin-left: 7%;
+    margin-bottom: 10%;
+    color: #fff;
+    position: absolute;
+    left: 40%;
+    /* right: 30%; */
+    /* line-height: 2; */
+}
+#learn .text h2{
+    color:#fff;
+}
+#learn .text p{
+    margin-bottom: 3%;
+    line-height: 1.7;
+}
+.lm-btn{
+    color: #fff;
+    width: 200px;
+    height: 70px;
+    padding: 12px 30px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    margin-top: 25px;
+    border-radius: 20px;
+}
+
+
+.learnImg{
+    position: absolute;
+    /* top: 100%; */
+    /* bottom: 100%; */
+    margin-top: -78px;
+    margin-right: 10%;
+    left: 3%;
+    width:450px;
+}
+
+#getStarted{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 8%;
+    text-align: center;
+}
+.download-btn2{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+#getStarted .gsText{
+    font-size: 21px;
+}
+
+footer{
+    max-width: 1170px;
+    padding: 80px 0;
+    margin-top: 7%;
+    margin-left: 8%;
+}
+footer ul{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #120136;
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    display: block;
+    transition: all 3s ease;
+}
+.footer-col ul li a:hover{
+    color:#6936DB;
+    padding-left: 10px;
+}
+
+.socials .fab{
+    background-color: #6936DB;
+    color: #fff;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0px 10px 10px 0;
+    margin-top: 3px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 5s ease;
+}
+.socials .fab:hover{
+    color: #6936DB;
+    background-color: #fff;
+}
+
+
+
+/*-------------------Responsiveness-------------------*/
+@media (max-width:1440px){
+    .formobile{
+        display: none;
+    }
+}
+@media (max-width:990px)
+{
+    body {
+        background-color: #120136;
+    }
+    .fordesktop{
+        display: none;
+    }
+    .formobile{
+        display: contents;
+    }
+    .mT{
+        margin-top: 30%;
+        padding: 40px;
+    }
+    .mtext{
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+        line-height: 1.6;
+    }
+}
+    /* .container {
+        padding: 0 20px;
+      }
+      .hero {
+        padding: 150px 0;
+      }
+      .hero-content .col {
+        width: 100%;
+      }
+      .col p {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30%;
+    }
+    .hero img {
+        display: none;
+      }
+      h1{
+        font-size: 58px;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+        text-align: center;
+    }
+    .s-hero{
+        text-align: center;
+    }
+    .download-btn{
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+
+    #about{
+        text-align: center;
+       
+    }
+    
+    #about .mainContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        object-fit: contain;
+    }
+    
+    #about .content{
+        width: 50%;
+       
+        margin-left: 5%;
+        
+    }
+    
+    #about .content p{
+        line-height: 1.6;
+    }
+    
+    #about .img{
+        height: auto;
+    }
+    #about .img img{
+        height: auto;
+        width: 70%;
+        position: relative;
+        margin-left: 40%;
+    }
+    
+    
+}
+@media (max-width:574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+@media (max-width:990px){} */
